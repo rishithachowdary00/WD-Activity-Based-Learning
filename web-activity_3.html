@@ -1,0 +1,355 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Brownie World</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f8f1e7;
+            color: #4e342e;
+        }
+
+        header {
+            background: #d7b899;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            color: #4e2c20;
+            margin: 5px;
+          font-family:
+        }
+
+        nav {
+            background: #5d4037;
+            padding: 14px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #f3d5b5;
+        }
+
+        .hero {
+            background: #ead7c3;
+            text-align: center;
+            padding: 35px 15px;
+        }
+
+        .hero h2 {
+            color: #5d3025;
+            font-size: 30px;
+        }
+
+        .hero img {
+            width: 90%;
+            max-width: 600px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+
+        section {
+            padding: 25px 5%;
+            text-align: center;
+        }
+
+        section h2 {
+            color: #6d4c41;
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: center;
+            gap: 18px;
+            flex-wrap: wrap;
+        }
+
+        .item {
+            background: #fffdf8;
+            width: 210px;
+            padding: 12px;
+            border-radius: 10px;
+            box-shadow: 0 3px 8px #d6c2ad;
+        }
+
+        .item img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .item h3 {
+            color: #5d4037;
+        }
+
+        .price {
+            color: #8d4b32;
+            font-weight: bold;
+        }
+
+        button {
+            background: #795548;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #3e2723;
+        }
+
+        .offer {
+            background: #e6c8a9;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .contact {
+            background: #d7b899;
+            padding: 25px;
+            text-align: center;
+        }
+
+        footer {
+            background: #3e2723;
+            color: white;
+            text-align: center;
+            padding: 12px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #fffdf8;
+        }
+
+        th, td {
+            border: 1px solid #bca18a;
+            padding: 12px;
+        }
+
+        th {
+            background: #795548;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background: #f0e2d2;
+        }
+
+        @media (max-width: 600px) {
+            nav a {
+                display: inline-block;
+                margin: 7px;
+            }
+
+            .item {
+                width: 90%;
+            }
+
+            .hero img {
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Brownie World</h1>
+    <p>Freshly Baked with Love!</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#cakes">Cakes</a>
+    <a href="#pastries">Pastries</a>
+    <a href="#cookies">Cookies</a>
+    <a href="#custom">Custom Cakes</a>
+    <a href="#offers">Offers</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div class="hero" id="home">
+    <h2>Baked with Love, Made for You!</h2>
+    <p>Enjoy delicious cakes, pastries and cookies.</p>
+
+    <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=800"
+         alt="Chocolate cake">
+    <br><br>
+    <button onclick="location.href='#cakes'">
+        Explore Our Bakery
+    </button>
+</div>
+
+<section id="cakes">
+    <h2>Our Delicious Cakes</h2>
+    <div class="gallery">
+
+        <div class="item">
+            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400"
+                 alt="Chocolate cake">
+            <h3>Chocolate Cake</h3>
+            <p class="price">₹600</p>
+            <button onclick="alert('Chocolate Cake selected!')">Order Now</button>
+        </div>
+
+        <div class="item">
+            <img src="https://images.unsplash.com/photo-1586985289688-ca3cf47d3e6e?w=400"
+                 alt="Birthday cake">
+            <h3>Birthday Cake</h3>
+            <p class="price">₹800</p>
+            <button onclick="alert('Birthday Cake selected!')">Order Now</button>
+        </div>
+
+        <div class="item">
+            <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=400"
+                 alt="Fruit cake">
+            <h3>Fruit Cake</h3>
+            <p class="price">₹700</p>
+            <button onclick="alert('Fruit Cake selected!')">Order Now</button>
+        </div>
+
+    </div>
+</section>
+
+<section id="pastries">
+    <h2>Fresh Pastries</h2>
+    <div class="gallery">
+
+        <div class="item">
+            <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=400"
+                 alt="Cream pastry">
+            <h3>Cream Pastry</h3>
+            <p class="price">₹80</p>
+        </div>
+
+        <div class="item">
+            <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=400"
+                 alt="Strawberry dessert">
+            <h3>Strawberry Pastry</h3>
+            <p class="price">₹100</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="cookies">
+    <h2>Cookies and Biscuits</h2>
+    <div class="gallery">
+
+        <div class="item">
+            <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=400"
+                 alt="Chocolate cookies">
+            <h3>Chocolate Cookies</h3>
+            <p class="price">₹120 / pack</p>
+        </div>
+
+        <div class="item">
+            <img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=400"
+                 alt="Butter cookies">
+            <h3>Butter Cookies</h3>
+            <p class="price">₹100 / pack</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="custom">
+    <h2>Custom Cake Designs</h2>
+    <p>Special cakes for birthdays, weddings and celebrations!</p>
+
+    <div class="gallery">
+
+        <div class="item">
+            <img src="https://images.unsplash.com/photo-1535254973040-607b474cb50d?w=400"
+                 alt="Decorated cake">
+            <h3>Birthday Special</h3>
+            <p class="price">From ₹1000</p>
+        </div>
+
+        <div class="item">
+            <img src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=400"
+                 alt="Wedding cake">
+            <h3>Wedding Cake</h3>
+            <p class="price">From ₹2500</p>
+        </div>
+
+    </div>
+
+    <br>
+    <button onclick="location.href='#contact'">Request Custom Cake</button>
+</section>
+
+<section id="offers">
+    <h2>Seasonal Offers</h2>
+
+    <div class="offer">
+        <h3>Festival Special Offer!</h3>
+        <p>Get 20% OFF on selected cakes.</p>
+        <p>Celebrate special moments with delicious treats!</p>
+        <button onclick="alert('Contact us to learn more about this offer!')">
+            View Offer
+        </button>
+    </div>
+</section>
+
+<section id="prices">
+    <h2>Price List</h2>
+
+    <table>
+        <tr>
+            <th>Product</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td>Chocolate Cake</td>
+            <td>₹600</td>
+        </tr>
+        <tr>
+            <td>Birthday Cake</td>
+            <td>₹800</td>
+        </tr>
+        <tr>
+            <td>Cream Pastry</td>
+            <td>₹80</td>
+        </tr>
+        <tr>
+            <td>Chocolate Cookies</td>
+            <td>₹120 / pack</td>
+        </tr>
+    </table>
+</section>
+
+<div class="contact" id="contact">
+    <h2>Contact Our Bakery</h2>
+    <p>Address: MADHAPUR , HYDERABAD</p>
+    <p>Phone: +91 98765 43210</p>
+    <p>Email: brownieworld@example.com</p>
+    <p>Opening Hours: 11:00 AM - 10:00 PM</p>
+</div>
+
+<footer>
+    <p> 2026 Brownie World | Made with Love</p>
+<p> RISHITHA CHOWDARY . . .</p>
+</footer>
+
+</body>
+</html>
+
