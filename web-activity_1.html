@@ -1,0 +1,230 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Travel Booking Website</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5efff;
+            margin: 0;
+        }
+
+        header, footer {
+            background: #542788;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        .container {
+            width: 85%;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+        }
+
+        h2, h3 {
+            color: #542788;
+        }
+
+        input:not([type="checkbox"]), select {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 1px solid #c9a7eb;
+            border-radius: 5px;
+        }
+
+        .seats {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 12px;
+            margin: 15px 0;
+        }
+
+        .seats label {
+            background: #e5d5fa;
+            padding: 12px;
+            text-align: center;
+            border-radius: 6px;
+        }
+
+        .seats input {
+            accent-color: #542788;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #8e44ad;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background: #542788;
+        }
+
+        .cards {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: #fce4ec;
+            color: #542788;
+            padding: 15px;
+            flex: 1;
+            min-width: 100px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #c9a7eb;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background: #8e44ad;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background: #f5efff;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                width: 90%;
+                padding: 12px;
+            }
+
+            .cards {
+                flex-direction: column;
+            }
+
+            .seats {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>TravelGo</h1>
+    <p>Book Your Journey Easily!</p>
+</header>
+
+<div class="container">
+    <h2>Book Your Trip</h2>
+
+    <form>
+        <label>Source:</label>
+        <input type="text" placeholder="Enter source" required>
+
+        <label>Destination:</label>
+        <input type="text" placeholder="Enter destination" required>
+
+        <label>Travel Date:</label>
+        <input type="date" required>
+
+        <label>Passengers:</label>
+        <input type="number" min="1" value="1" required>
+
+        <label>Travel Service:</label>
+        <select>
+            <option>Bus</option>
+            <option>Train</option>
+            <option>Flight</option>
+        </select>
+
+        <h3>Select Your Seat</h3>
+
+        <div class="seats">
+            <label><input type="checkbox"> A1</label>
+            <label><input type="checkbox"> A2</label>
+            <label><input type="checkbox"> A3</label>
+            <label><input type="checkbox"> B1</label>
+            <label><input type="checkbox"> B2</label>
+            <label><input type="checkbox"> B3</label>
+            <label><input type="checkbox"> C1</label>
+            <label><input type="checkbox"> C2</label>
+            <label><input type="checkbox"> C3</label>
+            <label><input type="checkbox"> D1</label>
+            <label><input type="checkbox"> D2</label>
+            <label><input type="checkbox"> D3</label>
+        </div>
+
+        <button type="submit">Book Now</button>
+    </form>
+
+    <h2>Available Services</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Bus</h3>
+            <p>Comfortable travel</p>
+            <b>Fare: ₹500</b>
+        </div>
+
+        <div class="card">
+            <h3>Train</h3>
+            <p>Affordable travel</p>
+            <b>Fare: ₹300</b>
+        </div>
+
+        <div class="card">
+            <h3>Flight</h3>
+            <p>Fast travel</p>
+            <b>Fare: ₹2500</b>
+        </div>
+    </div>
+
+    <h2>Fare Details</h2>
+
+    <table>
+        <tr>
+            <th>Service</th>
+            <th>Fare</th>
+        </tr>
+        <tr>
+            <td>Bus</td>
+            <td>₹500</td>
+        </tr>
+        <tr>
+            <td>Train</td>
+            <td>₹300</td>
+        </tr>
+        <tr>
+            <td>Flight</td>
+            <td>₹2500</td>
+        </tr>
+    </table>
+</div>
+
+<footer>
+    <p>© 2026 TravelGo | Happy Journey!</P>
+<p> RISHITHA CHOWDARY. . .</p>
+</footer>
+
+</body>
+</html>
+
